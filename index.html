@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <input type="checkbox" id="ham-menu">
+<label for="ham-menu">
+  <div class="hide-des">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </div>
+
+
+</label>
+<div class="full-page-green"></div>
+<div class="ham-menu">
+    <ul>
+        <li onclick="showContent('home')">Home</li>
+        <li onclick="showContent('contact')">Contact</li>
+        <li onclick="showContent('information')">Information</li>
+        <li onclick="showContent('guide')">Guide</li>
+      </ul>
+</div>
+    
+</div>
+
+<div class="content-area">
+ <div class="imgg"><h1 class="head">JOB Freak</h1><img src="—Pngtree—career_3634495.png"/></div>
+ 
+    
+  
+    <div id="home" class="content active">
+      
+      <p>Get Updates for Jobs and Internships openings from different companies.</p>
+<br>
+<br>
+       <h1>We are Here for you ! ! !</h1> 
+    </div>
+
+    <div id="contact" class="content">
+        <h2>Contact Information</h2>
+        <p>Here you can find the contact details.</p>
+      </div>
+      <div id="information" class="content">
+        <h1>Recent Openings</h1>
+        
+        <section class="work">
+          <div class="gridcontainer">
+              <div class="card">
+                  <div class="imagecontainer">
+                  </div>
+                  <div class="cardcontainer">
+                  <h1>Genpact Hiring Train</h1>
+                  <br>
+                  <p>Batches allowed: 2022,23,24</p>
+                  <p>CTC offered:5 LPA</p>
+                  <br>
+                  <p>Location: Gurgaon
+                    
+                    
+                  </p>
+                  </div>
+              </div>
+          </div>
+         
+          <div class="gridcontainer">
+              <div class="card">
+                  <div class="imagecontainer">
+                  </div>
+                  <div class="cardcontainer">
+                    <h1>Dualite Hiring Frontend Developer Intern</h1>
+                    <br>
+                    <p>Batches allowed: Any Batch</p>
+                    <br>
+                    <p>CTC offered:25k per month</p>
+                    <br>
+                    <p>Location: Remote
+                      
+                      
+                    </p>
+                    </div>
+              </div>
+          </div>
+         <div class="gridcontainer">
+          <div class="card">
+              <div class="imagecontainer">
+              </div>
+              <div class="cardcontainer">
+                <h1>Leetcode Hiring Frontend Engineer</h1>
+                <br>
+                
+                <p>Batches allowed: Any Batch</p>
+                <br>
+                <p>CTC offered:11 LPA</p>
+                <br>
+                <p>Location: Bangalore
+                  
+                  
+                </p>
+                </div>
+         </div>
+      </section>
+      </div>
+      <div id="guide" class="content">
+        <h2>Guide</h2>
+        <p>Step-by-step guide and instructions.</p>
+      </div>
+
+
+      <script>
+        function showContent(contentId) {
+          // Hide all content elements
+          var contents = document.getElementsByClassName('content');
+          for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.remove('active');
+          }
+    
+          // Show the selected content
+          var selectedContent = document.getElementById(contentId);
+          selectedContent.classList.add('active');
+        }
+      </script>
+
+  
+
+</div>
+
+</body>
+</html>
